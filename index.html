@@ -78,6 +78,8 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease;
             border-bottom: 4px solid #667eea;
+            display: flex;
+            flex-direction: column;
         }
 
         .tool-card:hover {
@@ -123,6 +125,46 @@
             font-size: 0.8rem;
             margin-bottom: 8px;
             font-weight: 600;
+        }
+
+        .status-badge.available {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .tool-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: auto;
+            padding-top: 15px;
+        }
+
+        .tool-link {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #667eea;
+            border: 2px solid #667eea;
+            transition: all 0.2s ease;
+        }
+
+        .tool-link:hover {
+            background: #667eea;
+            color: #fff;
+        }
+
+        .tool-link.primary {
+            background: #667eea;
+            color: #fff;
+        }
+
+        .tool-link.primary:hover {
+            background: #5568d3;
+            border-color: #5568d3;
         }
 
         footer {
@@ -171,17 +213,40 @@
     <div class="container">
         <header>
             <h1>🛠️ Tools & Utilities</h1>
-            <p>Practical development tools and utilities for modern workflows</p>
+            <p>Open-source tools and utilities — each in its own repository</p>
             <div class="breadcrumb">
                 <a href="https://abdelhaleemahmed.github.io/">← Back to Portfolio</a>
             </div>
         </header>
 
         <div class="tools-grid">
-            <!-- YAML & Vim Projects -->
+            <!-- slimv -->
+            <div class="tool-card">
+                <div class="tool-icon">🎞️</div>
+                <h2>slimv</h2>
+                <span class="status-badge available">Available · v0.2.0</span>
+                <p class="tool-description">
+                    Shrink video course libraries to H.265/HEVC without visible quality loss.
+                    An ffmpeg-driven CLI that analyzes a library, benchmarks encoders on your
+                    own footage, re-encodes, and verifies every output before you delete a thing.
+                </p>
+                <ul class="tool-features">
+                    <li>🧠 VMAF benchmarking on your real content</li>
+                    <li>⚡ Intel Quick Sync / NVIDIA NVENC acceleration</li>
+                    <li>👁️ eyeball &amp; downscale-test to judge quality</li>
+                    <li>✅ Full-decode verify gate before deleting sources</li>
+                </ul>
+                <div class="tool-links">
+                    <a class="tool-link primary" href="https://github.com/abdelhaleemahmed/slimv">GitHub</a>
+                    <a class="tool-link" href="https://abdelhaleemahmed.github.io/slimv/">Docs</a>
+                    <a class="tool-link" href="https://github.com/abdelhaleemahmed/slimv/releases">Releases</a>
+                </div>
+            </div>
+
+            <!-- YAML & Vim (placeholder) -->
             <div class="tool-card">
                 <div class="tool-icon">🚀</div>
-                <h2>YAML & Vim Projects</h2>
+                <h2>YAML &amp; Vim</h2>
                 <span class="status-badge">In Development</span>
                 <p class="tool-description">
                     Advanced YAML editing tools and Vim plugin configurations for enhanced productivity.
@@ -190,11 +255,13 @@
                     <li>🔧 Vim RPM packages</li>
                     <li>⚙️ YAML mastery tools</li>
                     <li>📝 Custom configurations</li>
-                    <li>🎯 Performance optimization</li>
                 </ul>
+                <div class="tool-links">
+                    <a class="tool-link" href="https://github.com/abdelhaleemahmed">Coming soon</a>
+                </div>
             </div>
 
-            <!-- System Tools -->
+            <!-- System Tools (placeholder) -->
             <div class="tool-card">
                 <div class="tool-icon">⚙️</div>
                 <h2>System Tools</h2>
@@ -206,24 +273,10 @@
                     <li>📊 Performance monitoring</li>
                     <li>🔄 Automation scripts</li>
                     <li>🛡️ System utilities</li>
-                    <li>📈 Admin helpers</li>
                 </ul>
-            </div>
-
-            <!-- Utilities & Configs -->
-            <div class="tool-card">
-                <div class="tool-icon">📦</div>
-                <h2>Utilities & Configurations</h2>
-                <span class="status-badge">In Development</span>
-                <p class="tool-description">
-                    Productivity tools, development aids, and system configurations for streamlined workflows.
-                </p>
-                <ul class="tool-features">
-                    <li>🔧 Development utilities</li>
-                    <li>⚙️ System configurations</li>
-                    <li>📝 Editor settings</li>
-                    <li>🚀 Quick setups</li>
-                </ul>
+                <div class="tool-links">
+                    <a class="tool-link" href="https://github.com/abdelhaleemahmed">Coming soon</a>
+                </div>
             </div>
         </div>
 
@@ -233,7 +286,7 @@
                 <a href="https://abdelhaleemahmed.github.io/">Ahmed Abdelhaleem's Portfolio</a>
             </p>
             <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
-                Last updated: December 3, 2025 |
+                Each tool is an independent open-source repository &middot;
                 <a href="https://github.com/abdelhaleemahmed">GitHub</a>
             </p>
         </footer>
