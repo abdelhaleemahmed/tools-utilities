@@ -20,7 +20,7 @@ footage, re-encodes, and verifies every output before you delete a thing.
 - ✅ Full-decode verify gate before deleting sources
 
 **Repo:** https://github.com/abdelhaleemahmed/slimv &nbsp;·&nbsp;
-**Docs:** https://abdelhaleemahmed.github.io/slimv/ &nbsp;·&nbsp;
+**Docs:** https://abdelhaleemahmed.github.io/slimv/docs/ &nbsp;·&nbsp;
 **Releases:** https://github.com/abdelhaleemahmed/slimv/releases
 
 ### 🚀 YAML & Vim — _in development_
