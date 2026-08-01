@@ -1,62 +1,42 @@
 # Tools & Utilities
 
-**URL:** `https://abdelhaleemahmed.github.io/tools-utilities/`
+**Live:** https://abdelhaleemahmed.github.io/tools-utilities/
 
-## Overview
+A catalog of open-source tools and utilities — **each maintained in its own
+repository** for independent versioning, issues, releases, and contributions.
+This repo is the **hub**: a landing page that links out to each tool.
 
-A collection of development tools, utilities, and configurations created and maintained. Practical resources for developers and system administrators.
+## Tools
 
-## Project Categories
+### 🎞️ slimv — video re-encoding toolkit &nbsp;·&nbsp; ✅ Available (v0.2.0)
 
-### YAML & Vim Mastery
-- Advanced YAML configuration tooling
-- Vim plugin ecosystems
-- Configuration management
+Shrink video course libraries to H.265/HEVC without visible quality loss. An
+ffmpeg-driven CLI that analyzes a library, benchmarks encoders on your own
+footage, re-encodes, and verifies every output before you delete a thing.
 
-### System Tools
-- Automation scripts
-- System administration utilities
-- Performance monitoring tools
+- 🧠 VMAF benchmarking on your real content
+- ⚡ Intel Quick Sync / NVIDIA NVENC acceleration
+- 👁️ `eyeball` & `downscale-test` to judge quality by eye
+- ✅ Full-decode verify gate before deleting sources
 
-### Utilities
-- Productivity tools
-- Development aids
-- System utilities
+**Repo:** https://github.com/abdelhaleemahmed/slimv &nbsp;·&nbsp;
+**Docs:** https://abdelhaleemahmed.github.io/slimv/ &nbsp;·&nbsp;
+**Releases:** https://github.com/abdelhaleemahmed/slimv/releases
 
-### Configurations
-- Editor configurations
-- System configurations
-- Development environment setups
+### 🚀 YAML & Vim — _in development_
 
-### Scripts
-- Bash scripts
-- Python automation
-- Task automation scripts
+Advanced YAML editing tools and Vim plugin configurations.
 
-## Featured Tools
+### ⚙️ System Tools — _in development_
 
-Each tool includes:
-- 📖 Documentation
-- 🔧 Installation guide
-- 📝 Usage examples
-- 🐛 Troubleshooting
-- 🔗 GitHub link
+Automation scripts, system-administration utilities, and monitoring tools.
 
-## Quick Start
+## How this is organized
 
-1. Browse tools by category
-2. Read the documentation
-3. Follow installation instructions
-4. Explore examples
-5. Contribute improvements
-
-## Features
-
-- ✅ Open source utilities
-- ✅ Well-documented
-- ✅ Easy installation
-- ✅ Active maintenance
-- ✅ Community support
+Each tool is its **own repository** (own README, license, tests, releases, and
+issues). This `tools-utilities` repo is only the **catalog / landing page** that
+links to them — it does not contain the tool code. New tools are added by
+creating a repo and adding a card to `index.html` and this README.
 
 ## Back to Portfolio
 
@@ -64,5 +44,5 @@ Each tool includes:
 
 ---
 
-**Last Updated:** December 3, 2025
-**Maintained By:** Ahmed Abdelhaleem
+**Maintained by** Ahmed Abdelhaleem &nbsp;·&nbsp;
+[GitHub](https://github.com/abdelhaleemahmed)
